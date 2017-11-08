@@ -11,8 +11,8 @@ var Strategy = require('passport-twitter').Strategy;
 // with a user object, which will be set at `req.user` in route handlers after
 // authentication.
 passport.use(new Strategy({
-    consumerKey: process.env.CONSUMER_KEY,
-    consumerSecret: process.env.CONSUMER_SECRET,
+    consumerKey: 		"6OiUrUPUkcIoF5Ze0uR3E6TUc",
+    consumerSecret: 	"1hVzReuTCVZqyFfTRI7cSB7V8fihU19CJrzfMfwwgu5aXPFE6L",
     callbackURL: 'http://127.0.0.1:3000/login/twitter/return'
   },
   function(token, tokenSecret, profile, cb) {
